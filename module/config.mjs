@@ -1,6 +1,6 @@
 const PSYS = {};
 
-/*
+/**
 * Configuration data for abilities
 *
 * @typedef {object} AbilityConfiguration
@@ -12,7 +12,7 @@ const PSYS = {};
 * @property {Object<string, number|string} [defaults]
 */
 
-/*
+/**
 * The set of Ability Scores used within the system.
 * @enum {AbilityConfiguration}
 */
@@ -62,17 +62,34 @@ PSYS.abilities = {
 };
 preLocalize("abilities", { keys: ["label", "abbreviation"] });
 
-/*
-* Configure which ability score is used as the default modifier for initiative rolls.
-* @type {string}
-*
-*/
+/**
+ * Configure which ability score is used as the default modifier for initiative rolls.
+ * @type {string}
+ *
+ */
 
 PSYS.iniativeAbility = "dex";
 
-/*
+/**
 * Configure which ability score is used when calculating hit points per level.
 * @type {string}
 *
 */
 PSYS.hitPointsAbility = "con";
+
+/* -------------------------------------------- */
+
+/**
+ * Configuration data for skills.
+ *
+ * @typedef {object} SkillConfiguration
+ * @property {string} label        Localized label.
+ * @property {string} ability      Key for the default ability used by this skill.
+ * @property {string} fullKey      Fully written key used as alternate for enrichers.
+ * @property {string} [reference]  Reference to a rule page describing this skill.
+ */
+
+/**
+ * The set of skill which can be trained with their default ability scores.
+ * @enum {SkillConfiguration}
+ */
