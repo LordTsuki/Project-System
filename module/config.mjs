@@ -396,3 +396,5 @@ DND5E.currencies = {
     }
   };
   preLocalize("currencies", { keys: ["label", "abbreviation"] });
+
+export default PSYS;
