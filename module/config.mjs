@@ -317,11 +317,12 @@ PSYS.alignments = {
  * Colors used to visualize temporary and temporary maximum HP in token health bars.
  * @enum {number}
  */
-DND5E.tokenHPColors = {
+PSYS.tokenHPColors = {
     damage: 0xFF0000,
     healing: 0x00FF00,
     temp: 0x66CCFF,
-    tempmax: 0x440066,
+    shield: 0x66CC,
+    shieldmax: 0x440066,
     negmax: 0x550000
   };
   
@@ -331,7 +332,7 @@ DND5E.tokenHPColors = {
    * Colors used when a dynamic token ring effects.
    * @enum {number}
    */
-  DND5E.tokenRingColors = {
+  PSYS.tokenRingColors = {
     damage: 0xFF0000,
     defeated: 0x000000,
     healing: 0x00FF00,
@@ -344,7 +345,7 @@ DND5E.tokenHPColors = {
    * Settings used to render map location markers on the canvas.
    * @type {object}
    */
-  DND5E.mapLocationMarker = {
+  PSYS.mapLocationMarker = {
     default: {
       backgroundColor: 0xFBF8F5,
       borderColor: 0x000000,
@@ -368,30 +369,25 @@ DND5E.tokenHPColors = {
  * The conversion number defines how many of that currency are equal to one GP.
  * @enum {CurrencyConfiguration}
  */
-DND5E.currencies = {
+PSYS.currencies = {
     pp: {
-      label: "DND5E.CurrencyPP",
-      abbreviation: "DND5E.CurrencyAbbrPP",
+      label: "PSYS.CurrencyPP",
+      abbreviation: "PSYS.CurrencyAbbrPP",
       conversion: 0.1
     },
     gp: {
-      label: "DND5E.CurrencyGP",
-      abbreviation: "DND5E.CurrencyAbbrGP",
+      label: "PSYS.CurrencyGP",
+      abbreviation: "PSYS.CurrencyAbbrGP",
       conversion: 1
     },
-    ep: {
-      label: "DND5E.CurrencyEP",
-      abbreviation: "DND5E.CurrencyAbbrEP",
-      conversion: 2
-    },
     sp: {
-      label: "DND5E.CurrencySP",
-      abbreviation: "DND5E.CurrencyAbbrSP",
+      label: "PSYS.CurrencySP",
+      abbreviation: "PSYS.CurrencyAbbrSP",
       conversion: 10
     },
     cp: {
-      label: "DND5E.CurrencyCP",
-      abbreviation: "DND5E.CurrencyAbbrCP",
+      label: "PSYS.CurrencyCP",
+      abbreviation: "PSYS.CurrencyAbbrCP",
       conversion: 100
     }
   };
