@@ -1,0 +1,30 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "Infini8.weapon.attack"}}</th>
+                <th>{{localize "Infini8.weapon.damage"}}</th>
+                <th>{{localize "Infini8.weapon.critic"}}</th>
+                <th>{{localize "Infini8.weapon.properties"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.attack" type="text" value="{{data.attack}}" data-dtype="text" />
+                </td>
+                <td>
+                    <input name="data.damage" type="text" value="{{data.damage}}" data-dtype="text" />
+                </td>
+                <td>
+                    <input name="data.critic" type="int" value="{{data.critic}}" data-dtype="number" />
+                </td>
+                <td>
+                    <input name="data.properties" type="text" value="{{data.properties}}" data-dtype="text" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>

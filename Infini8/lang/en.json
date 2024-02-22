@@ -1,0 +1,26 @@
+{"Infini8": {
+    "ACTOR.TypeCharacter": "Player Character",
+    "ACTOR.TypeCharacterPl": "Player Characters",
+    "ACTOR.TypeNpc": "Non-Player Character",
+    "ACTOR.TypeNpcPl": "Non-Player Characters",
+    "ACTOR.TypeVehicle": "Vehicle",
+    "ACTOR.TypeVehiclePl": "Vehicles",
+    "ACTOR.TypeGroup": "Group",
+
+    "TYPES.Actor.character": "Player Character",
+    "TYPES.Actor.characterPl": "Player Characters",
+    "TYPES.Actor.npc": "Non-Player Character",
+    "TYPES.Actor.npcPl": "Non-Player Characters",
+    "TYPES.Actor.vehicle": "Vehicle",
+    "TYPES.Actor.vehiclePl": "Vehicles",
+    "TYPES.Actor.group": "Group",
+    "TYPES.Actor.groupPl": "Groups",
+
+    "Item.weapon":  {
+        "attack": "Attack",
+        "damage": "Damage",
+        "critic": "Critic",
+        "properties": "Properties"
+        }
+    }
+}

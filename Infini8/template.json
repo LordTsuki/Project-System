@@ -5,12 +5,23 @@
             "npc",
             "vehicle",
             "group"
+        ],
+        "htmlFields": [
+            "details.biography.value",
+            "details.biography.public",
+            "description.full",
+            "description.summary"
         ]
     },
     "Item":{
         "types": [
             "weapon",
             "armor"
+        ],
+        "htmlFields": [
+            "description.value",
+            "description.chat",
+            "unidentified.description"
         ],
         "templates":{
             "itemDescription":{
@@ -19,8 +30,8 @@
         },
         "weapon":{
             "templates":["itemDescription"],
-            "attack":0,
-            "damage":0,
+            "attack":"",
+            "damage":"",
             "critic":0,
             "properties": ""
         },
